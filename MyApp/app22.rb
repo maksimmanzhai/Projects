@@ -5,3 +5,5 @@ arr = []
 hh = {}
 
 arr.push = 1
+
+puts arr
