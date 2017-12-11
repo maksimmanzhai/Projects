@@ -6,6 +6,6 @@ def positive_to_min(arr)
 end
  
 arr = (-10..10).to_a.shuffle
-puts arr
+
 p arr
 p positive_to_min(arr)
