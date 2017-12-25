@@ -23,6 +23,6 @@ loop do
 	end
 	puts "Enter age"
 	age = gets.to_i
-	add = {:name => name, :age => age}
-	add_person add
+	
+	add_person :name =>name, :age => age
 end
