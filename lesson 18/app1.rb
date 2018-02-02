@@ -10,8 +10,8 @@ def is_password_weak password
 end
 
 puts "Enter your password"
-my_password = gets.chomp.to_s
-
+#my_password = gets.chomp.to_s
+my_password = "123456"
 if is_password_weak my_password
 	puts "Your password is weak"
 else
