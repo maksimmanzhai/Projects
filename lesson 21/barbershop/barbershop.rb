@@ -1,7 +1,3 @@
-
-#3. sinatra format phone
-#4. sinatra date calendar
-
 require 'sinatra'
 
 get '/' do
@@ -20,7 +16,7 @@ post '/' do
 	@title = 'Thank you!'
 	@message = "Dear #{@user_name}, phone #{@phone} we'll be waiting for you at #{@date_time}"
 
-	@f = File.open 'users.txt', 'a'
+	@f = File.open './public/users.txt', 'a'
 	@f.write "User: #{@user_name},\tPhone: #{@phone},\tDate and time: #{@date_time}\n"
 	@f.close
 	erb :message
@@ -31,10 +27,8 @@ post '/admin' do
 	@password = params[:password]
 
 	if @login == 'admin' && @password == '12345'
-		@logfile = File.read("users.txt")
+		@logfile = File.read("./public/users.txt")
 		erb :list_of_users
-	elsif @login == 'admin' && @password == 'admin'
-		@message = 'Haha! Nice try! Access denied.'
 	else
 		@message = 'Access denied'
 		erb :index
