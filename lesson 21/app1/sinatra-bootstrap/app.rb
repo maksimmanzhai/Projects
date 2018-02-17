@@ -1,5 +1,3 @@
-#1. add login & password
-
 require 'rubygems'
 require 'sinatra'
 
