@@ -1,7 +1,4 @@
 
-#5. all save contacts will add to ./public/contacts.txt
-#6. choise on /visit chairman with select
-#7. save data to file
 #8. access for admin with password
 
 require 'rubygems'
@@ -29,13 +26,13 @@ post '/visit' do
 	@username = params[:username]
 	@phone = params[:phone]
 	@datetime = params[:datetime]
-	@textarea = params[:textarea1]
+	@textarea = params[:textarea]
+	@chairman = params[:chairman] 
 	@visits = File.open './public/users.txt', 'a'
-	@visits.write "User: #{@username},\tPhone: #{@phone},\tDate and time: #{@datetime}\n"
+	@visits.write "User: #{@username},\tPhone: #{@phone},\tDate and time: #{@datetime}\tTextarea: #{@textarea}\tChairman: #{@chairman}\n"
 	@visits.close
-	@message = "Dear #{@user_name}, phone #{@phone} we'll be waiting for you at #{@date_time}"
+
+	@message = "Dear #{@user_name}, phone #{@phone} we'll be waiting for you at #{@datetime}. Yor chairman is #{@chairman}"
 	erb :message
-	@contacts = File.open './public/contacts.txt', 'a'
-	@contacts.write "#{@phone}\n"
-	@contacts.close
+
 end

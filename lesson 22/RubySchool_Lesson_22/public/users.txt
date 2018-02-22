@@ -1,5 +1,4 @@
-User: 23bender,	Phone: 232323,	Date and time: 224243
-User: 23bender,	Phone: 232323,	Date and time: 224243
-User: 23bender,	Phone: 12121212,	Date and time: 224243
-User: 23bender,	Phone: 12121212,	Date and time: 224243
-User: 23bender,	Phone: 12121212,	Date and time: 224243
+User: 1,	Phone: 232323,	Date and time: 	Textarea: 2	Chairman: Сол
+User: ,	Phone: ,	Date and time: 	Textarea: 	Chairman: 
+User: 1111,	Phone: 222,	Date and time: 2018-02-23	Textarea: 3333	Chairman: Джесси
+User: Максим,	Phone: 232323,	Date and time: 2018-02-23	Textarea: 	Chairman: Сол
