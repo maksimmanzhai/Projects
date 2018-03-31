@@ -1,21 +1,31 @@
 <h2>Записаться</h2>
 <p>На этой странице вы можете записаться к парикмахеру</p>
 
+<script type="text/javascript">
+	$(function() {
+		// любой код JS, который выполнится, после загрузки страницы
+		$('#color').simplecolorpicker();
+	});
+
+</script>
+
+
+
 <form action="/visit" method="POST" role="form">
 	
 	<div class="form-group">
 		<label>Ваше имя</label>
-		<input type="text" name="username" class="form-control">
+		<input type="text" name="username" class="form-control" placeholder="Ваше имя" value="<%= @username %>">
   </div>
 
 	<div class="form-group">
 		<label>Ваше телефон</label>
-		<input type="text" name="phone" class="form-control">
+		<input type="text" name="phone" class="form-control" placeholder="Ваш телефон" value="<%= @phone %>">
   </div>
 
   <div class="form-group">
 		<label>Ваше время</label>
-		<input type="text" name="datetime" class="form-control">
+		<input type="text" name="datetime" class="form-control" placeholder="Ваше время" value="<%= @datetime %>">
   </div>
 
 	<div class="form-group">
@@ -45,16 +55,7 @@
 		  <option value="#000000">Black</option>
 		</select>
 	</div>
+  
   <button type="submit" class="btn btn-primary">Записаться</button>
 
-
-
-
 </form>
-
-<script type="text/javascript">
-	
-	$(function(){
-		$('#color').simplecolorpicker();
-});
-</script>
