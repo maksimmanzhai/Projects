@@ -17,11 +17,15 @@ end
 
 get '/contacts' do
 	erb :contacts
-
-	Pony.options = { :from => 'noreply@example.com', :via => :smtp, :via_options => { :host => 'smtp.yourserver.com' } }
-	Pony.mail(:to => 'bender23max@gmail.com') # Sends mail to foo@bar from noreply@example.com using smtp
+	
 end
 
+post '/contact' do
+	Pony.options = { :from => 'v01oep@uemail99.com', :via => :smtp, :via_options => { :host => 'smtp.yourserver.com' } }
+	#Pony.mail(:to => 'bender23max@gmail.com', :body => "In case you can't read html, Hello there.") # Sends mail to foo@bar from noreply@example.com using smtp
+	Pony.mail(:from => 'v01oep@uemail99.com', :to => 'bender23max@gmail.com', :body => "In case you can't read html, Hello there.") # Sends mail to foo@bar from pony@example.com using smtp
+	
+end
 
 post '/visit' do
 
