@@ -48,6 +48,8 @@ Temporary Items
 lesson 20/barbershop/users.txt
 lesson 20/barbershop/users.txt
 
+*.lock
+
 #data base
 *.db
 *.sqlite
