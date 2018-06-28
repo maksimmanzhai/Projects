@@ -47,3 +47,8 @@ Temporary Items
 .apdisk
 lesson 20/barbershop/users.txt
 lesson 20/barbershop/users.txt
+
+#data base
+*.db
+*.sqlite
+*.sqlite3
