@@ -39,6 +39,10 @@ get '/contacts' do
 	
 end
 
+get '/showusers' do
+  erb "Hello World"
+end
+
 post '/contact' do
 	
 end
