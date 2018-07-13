@@ -20,6 +20,7 @@ configure do
 			"barber" TEXT,
 			"color" TEXT
 		)'
+		db.close
 end
 
 get '/' do 
@@ -40,10 +41,10 @@ get '/contacts' do
 end
 
 get '/showusers' do
-  erb "Hello World"
+	erb :showusers
 end
 
-post '/contact' do
+get '/contact' do
 	
 end
 

@@ -1,0 +1,7 @@
+<% db = get_db %>
+<% db.results_as_hash = true %>
+
+<% db.execute( "select * from Users order by id desc" ) do |row| %>
+  <%= row['username'] %>
+  <%= row['datestamp'] %>
+<% end %>
