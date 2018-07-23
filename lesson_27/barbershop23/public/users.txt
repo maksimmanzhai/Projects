@@ -13,3 +13,6 @@ User: Herman,	Phone: 963258963,	Date and time: 2018/07/14 20:00	Textarea: 	Chair
 User: Rohan,	Phone: 159632569,	Date and time: 2018/07/19 18:00	Textarea: 	Chairman: 
 User: Timmy,	Phone: 963258963,	Date and time: 2018/07/15 16:00	Textarea: 	Chairman: 
 User: Fargo,	Phone: 34567323,	Date and time: 2018/07/16 17:00	Textarea: 	Chairman: 
+User: Alex,	Phone: 43176886,	Date and time: 2018/07/21 18:00	Textarea: 	Chairman: 
+User: Boris,	Phone: 741952369,	Date and time: 2018/07/02 18:00	Textarea: 	Chairman: 
+User: ,	Phone: ,	Date and time: 	Textarea: 	Chairman: 

@@ -14,7 +14,7 @@
 	</thead>
 
 	<tbody>
-	<% db.execute( "select * from Users order by id desc" ) do |row| %>
+	<% db.execute( "select * from Users where datestamp > '2018/07/18 00:00'" ) do |row| %>
   	<tr>
       <th scope="row"> <%= row['id'] %> </th>
   		<td> <%= row['username'] %> </td>
