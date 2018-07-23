@@ -16,3 +16,5 @@ User: Fargo,	Phone: 34567323,	Date and time: 2018/07/16 17:00	Textarea: 	Chairma
 User: Alex,	Phone: 43176886,	Date and time: 2018/07/21 18:00	Textarea: 	Chairman: 
 User: Boris,	Phone: 741952369,	Date and time: 2018/07/02 18:00	Textarea: 	Chairman: 
 User: ,	Phone: ,	Date and time: 	Textarea: 	Chairman: 
+User: ,	Phone: ,	Date and time: 	Textarea: 	Chairman: 
+User: Richard,	Phone: 45657575,	Date and time: 2018/07/11 21:31	Textarea: 	Chairman: 
