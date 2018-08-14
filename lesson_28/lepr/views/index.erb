@@ -2,6 +2,8 @@
 <br />
 <% @results.each do |post| %>
 	<p>
+		<%= post['username'] %>
+		<br/>
 		<%= post['content'] %>
 		<br/>
 		Added at <%= post['created_date'] %>
