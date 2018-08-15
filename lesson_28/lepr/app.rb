@@ -53,7 +53,6 @@ post '/new' do
   end
 
   @db.execute 'insert into Posts (username, content, created_date) values (?, ?, datetime())', [username, content]
-  
   redirect to "/"
   erb "You posted: #{content}"
 end
@@ -64,14 +63,20 @@ get '/details/:post_id' do
 	results = @db.execute 'select * from Posts where id = ?', [post_id]
 	@row = results[0]
 
-	@comments = @db.execute 'select * from Comments where post_id = ? order by id', [post_id]
+	@comments = @db.execute 'select * from Comments where post_id = ? order by created_date desc ', [post_id]
 
 	erb :details
 end
 
 post '/details/:post_id' do
 	post_id = params[:post_id]
-  content = params[:content]
-  @db.execute 'insert into Comments (content, created_date, post_id) values (?, datetime(), ?)', [content, post_id]
+	content = params[:content]
+
+	if content.length <= 0
+		@error = "Type your comment"
+		returnerb :details
+	end
+
+	@db.execute 'insert into Comments (content, created_date, post_id) values (?, datetime(), ?)', [content, post_id]
 	redirect to ('/details/' + post_id)
 end
